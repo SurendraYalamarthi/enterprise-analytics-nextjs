@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Enterprise Analytics Dashboard — Next.js
+
+A hands-on portfolio project built with **Next.js, React, TypeScript, and Material UI (MUI)**, focused on modern frontend engineering practices, reusable UI components, routing, and application structure.
+
+The project explores Next.js App Router capabilities through a dashboard application, including nested layouts, dynamic routes, error handling, and interactive UI components.
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **UI Library:** React, Material UI (MUI)
+- **Styling:** CSS Modules and global CSS
+- **Fonts:** Geist via `next/font`
+- **Runtime:** Node.js
+
+## Features and Implementation
+
+- **App Router:** File-system-based routing and nested route structures.
+- **Layouts and Route Groups:** Shared layouts and separation of application sections using route groups.
+- **Dynamic Routing:** Dynamic segments and nested route parameters.
+- **Catch-all Routes:** Catch-all and optional catch-all routing patterns.
+- **Navigation:** Client-side navigation and active route handling.
+- **Loading and Error States:** Route-level loading UI, error boundaries, and not-found handling.
+- **Forms and Interactions:** Login form UI, input validation, and password visibility toggle.
+- **Material UI:** Reusable interface elements using MUI components.
+- **TypeScript:** Typed component props, state, and route parameters.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js installed
+- npm installed
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SurendraYalamarthi/enterprise-analytics-nextjs.git
+cd enterprise-analytics-nextjs
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application will automatically reload as you make changes to the source files.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+The application uses the Next.js App Router under `src/app`, with layouts, route groups, and nested route segments organized by responsibility.
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+├── app/
+│   ├── (auth)/
+│   ├── (main)/
+│   ├── dashboard/
+│   │   ├── reports/
+│   │   ├── settings/
+│   │   ├── users/
+│   │   └── docs/
+│   ├── layout.tsx
+│   └── globals.css
+├── components/
+└── types/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*Note: This is a high-level overview; the structure may evolve as the project develops.*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development Goals
 
-## Deploy on Vercel
+This project is intended to demonstrate practical frontend engineering skills and explore Next.js features, including:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Building maintainable and reusable React components.
+- Understanding Server Components and Client Components.
+- Structuring applications with the App Router.
+- Implementing accessible, responsive user interfaces.
+- Handling route parameters, loading states, and errors.
+- Exploring server-side data fetching and backend integration as the project evolves.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Useful Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Next.js Learn](https://nextjs.org/learn)
+- [React Documentation](https://react.dev/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Material UI Documentation](https://mui.com/material-ui/getting-started/)
+
+## Deployment
+
+The application can be deployed using [Vercel](https://vercel.com/), which supports Next.js deployments.
+
+For deployment instructions, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+---
+
+Built as a practical portfolio project focused on modern React and Next.js frontend engineering.

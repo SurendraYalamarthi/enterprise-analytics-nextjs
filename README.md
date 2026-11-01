@@ -22,8 +22,12 @@ The project explores Next.js App Router capabilities through a dashboard applica
 - **Navigation:** Client-side navigation and active route handling.
 - **Loading and Error States:** Route-level loading UI, error boundaries, and not-found handling.
 - **Forms and Interactions:** Login form UI, input validation, and password visibility toggle.
+- **User Management:** User directory with name search, role filtering, sortable columns, and individual user detail routes.
+- **User Route States:** Simulated asynchronous data loading, loading/error UI, and not-found handling for unknown user IDs.
 - **Material UI:** Reusable interface elements using MUI components.
 - **TypeScript:** Typed component props, state, and route parameters.
+
+User records currently come from an in-memory sample dataset in `src/lib/users.ts`; no backend API is connected yet.
 
 ## Getting Started
 
@@ -65,16 +69,26 @@ The application uses the Next.js App Router under `src/app`, with layouts, route
 src/
 ├── app/
 │   ├── (auth)/
+│   │   └── login/
 │   ├── (main)/
+│   │   └── about/
 │   ├── dashboard/
+│   │   ├── [...slug]/
+│   │   ├── docs/[[...slug]]/
 │   │   ├── reports/
 │   │   ├── settings/
 │   │   ├── users/
-│   │   └── docs/
+│   │   │   └── [id]/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
 │   ├── layout.tsx
 │   └── globals.css
 ├── components/
-└── types/
+│   └── dashboard/
+├── constants/
+├── lib/
+├── types/
+└── utils/
 ```
 
 *Note: This is a high-level overview; the structure may evolve as the project develops.*

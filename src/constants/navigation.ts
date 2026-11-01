@@ -17,6 +17,11 @@ export const navigationItems: readonly NavigationItem[] = [
     exact: false
   },
   {
+    label: "Users",
+    path: "/dashboard/users",
+    exact: false
+  },
+  {
     label: "Settings",
     path: "/dashboard/settings",
     exact: false
